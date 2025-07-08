@@ -1,0 +1,450 @@
+[
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e3"
+    },
+    "nome": "The Weeknd",
+    "genere": "canadian contemporary r&b"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e4"
+    },
+    "nome": "Harry Styles",
+    "genere": "pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e5"
+    },
+    "nome": "24kGoldn",
+    "genere": "cali rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e6"
+    },
+    "nome": "Lewis Capaldi",
+    "genere": "pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e7"
+    },
+    "nome": "Ed Sheeran",
+    "genere": "pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e8"
+    },
+    "nome": "Imagine Dragons",
+    "genere": "modern rock"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9e9"
+    },
+    "nome": "Billie Eilish",
+    "genere": "electropop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ea"
+    },
+    "nome": "Post Malone",
+    "genere": "dfw rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9eb"
+    },
+    "nome": "Maroon 5",
+    "genere": "pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ec"
+    },
+    "nome": "The Chainsmokers",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ed"
+    },
+    "nome": "James Arthur",
+    "genere": "pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ee"
+    },
+    "nome": "Juice WRLD",
+    "genere": "chicago rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ef"
+    },
+    "nome": "John Legend",
+    "genere": "neo soul"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f0"
+    },
+    "nome": "Ariana Grande",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f1"
+    },
+    "nome": "XXXTENTACION",
+    "genere": "emo rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f2"
+    },
+    "nome": "Travis Scott",
+    "genere": "rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f3"
+    },
+    "nome": "Avicii",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f4"
+    },
+    "nome": "DaBaby",
+    "genere": "north carolina hip hop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f5"
+    },
+    "nome": "Twenty One Pilots",
+    "genere": "modern rock"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f6"
+    },
+    "nome": "SAINt JHN",
+    "genere": "melodic rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f7"
+    },
+    "nome": "Roddy Ricch",
+    "genere": "melodic rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f8"
+    },
+    "nome": "Justin Bieber",
+    "genere": "canadian pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9f9"
+    },
+    "nome": "Lady Gaga",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9fa"
+    },
+    "nome": "Lil Uzi Vert",
+    "genere": "melodic rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9fb"
+    },
+    "nome": "Hozier",
+    "genere": "irish singer-songwriter"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9fc"
+    },
+    "nome": "Marshmello",
+    "genere": "brostep"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9fd"
+    },
+    "nome": "OneRepublic",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9fe"
+    },
+    "nome": "Macklemore & Ryan Lewis",
+    "genere": "pop rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56a9ff"
+    },
+    "nome": "Shawn Mendes",
+    "genere": "canadian pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa00"
+    },
+    "nome": "Drake",
+    "genere": "canadian hip hop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa01"
+    },
+    "nome": "Dua Lipa",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa02"
+    },
+    "nome": "Queen",
+    "genere": "classic rock"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa03"
+    },
+    "nome": "Kendrick Lamar",
+    "genere": "conscious hip hop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa04"
+    },
+    "nome": "DJ Snake",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa05"
+    },
+    "nome": "Sam Smith",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa06"
+    },
+    "nome": "Mark Ronson",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa07"
+    },
+    "nome": "Lauv",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa08"
+    },
+    "nome": "The Killers",
+    "genere": "alternative rock"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa09"
+    },
+    "nome": "Tones And I",
+    "genere": "australian pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0a"
+    },
+    "nome": "Camila Cabello",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0b"
+    },
+    "nome": "French Montana",
+    "genere": "gangster rap"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0c"
+    },
+    "nome": "Vance Joy",
+    "genere": "folk-pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0d"
+    },
+    "nome": "Bruno Mars",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0e"
+    },
+    "nome": "Wiz Khalifa",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa0f"
+    },
+    "nome": "Calvin Harris",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa10"
+    },
+    "nome": "5 Seconds of Summer",
+    "genere": "boy band"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa11"
+    },
+    "nome": "Lil Nas X",
+    "genere": "lgbtq+ hip hop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa12"
+    },
+    "nome": "Jason Mraz",
+    "genere": "acoustic pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa13"
+    },
+    "nome": "Charlie Puth",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa14"
+    },
+    "nome": "Lukas Graham",
+    "genere": "danish pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa15"
+    },
+    "nome": "Cardi B",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa16"
+    },
+    "nome": "Luis Fonsi",
+    "genere": "latin"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa17"
+    },
+    "nome": "Oasis",
+    "genere": "beatlesque"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa18"
+    },
+    "nome": "benny blanco",
+    "genere": "electropop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa19"
+    },
+    "nome": "OMI",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1a"
+    },
+    "nome": "Sia",
+    "genere": "australian dance"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1b"
+    },
+    "nome": "Alan Walker",
+    "genere": "electro house"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1c"
+    },
+    "nome": "Passenger",
+    "genere": "folk-pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1d"
+    },
+    "nome": "Justin Timberlake",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1e"
+    },
+    "nome": "Major Lazer",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa1f"
+    },
+    "nome": "Eminem",
+    "genere": "detroit hip hop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa20"
+    },
+    "nome": "Halsey",
+    "genere": "dance pop"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa21"
+    },
+    "nome": "Mark Mendy",
+    "genere": "pop dance"
+  },
+  {
+    "_id": {
+      "$oid": "6842d937081ee8ac0d56aa22"
+    },
+    "nome": "Mike Posner",
+    "genere": "dance pop"
+  }
+]

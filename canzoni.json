@@ -1,0 +1,902 @@
+[
+  {
+    "titolo": "Blinding Lights",
+    "anno": 2020,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e3"
+      }
+    ]
+  },
+  {
+    "titolo": "Watermelon Sugar",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e4"
+      }
+    ]
+  },
+  {
+    "titolo": "Mood (feat. iann dior)",
+    "anno": 2021,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e5"
+      }
+    ]
+  },
+  {
+    "titolo": "Someone You Loved",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e6"
+      }
+    ]
+  },
+  {
+    "titolo": "Perfect",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e7"
+      }
+    ]
+  },
+  {
+    "titolo": "Believer",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e8"
+      }
+    ]
+  },
+  {
+    "titolo": "lovely (with Khalid)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e9"
+      }
+    ]
+  },
+  {
+    "titolo": "Circles",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "Shape of You",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e7"
+      }
+    ]
+  },
+  {
+    "titolo": "Memories",
+    "anno": 2021,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9eb"
+      }
+    ]
+  },
+  {
+    "titolo": "Closer",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ec"
+      }
+    ]
+  },
+  {
+    "titolo": "bad guy",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e9"
+      }
+    ]
+  },
+  {
+    "titolo": "Say You Won't Let Go",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ed"
+      }
+    ]
+  },
+  {
+    "titolo": "Lucid Dreams",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ee"
+      }
+    ]
+  },
+  {
+    "titolo": "All of Me",
+    "anno": 2013,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ef"
+      }
+    ]
+  },
+  {
+    "titolo": "7 rings",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f0"
+      }
+    ]
+  },
+  {
+    "titolo": "Jocelyn Flores",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f1"
+      }
+    ]
+  },
+  {
+    "titolo": "goosebumps",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f2"
+      }
+    ]
+  },
+  {
+    "titolo": "Wake Me Up",
+    "anno": 2013,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f3"
+      }
+    ]
+  },
+  {
+    "titolo": "ROCKSTAR (feat. Roddy Ricch)",
+    "anno": 2020,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f4"
+      }
+    ]
+  },
+  {
+    "titolo": "rockstar (feat. 21 Savage)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "Photograph",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e7"
+      }
+    ]
+  },
+  {
+    "titolo": "SAD!",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f1"
+      }
+    ]
+  },
+  {
+    "titolo": "SICKO MODE",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f2"
+      }
+    ]
+  },
+  {
+    "titolo": "Stressed Out",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f5"
+      }
+    ]
+  },
+  {
+    "titolo": "Roses - Imanbek Remix",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f6"
+      }
+    ]
+  },
+  {
+    "titolo": "The Box",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f7"
+      }
+    ]
+  },
+  {
+    "titolo": "The Hills",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e3"
+      }
+    ]
+  },
+  {
+    "titolo": "Sunflower - Spider-Man: Into the Spider-Verse",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "Thinking out Loud",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e7"
+      }
+    ]
+  },
+  {
+    "titolo": "Starboy",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e3"
+      }
+    ]
+  },
+  {
+    "titolo": "Love Yourself",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f8"
+      }
+    ]
+  },
+  {
+    "titolo": "Something Just Like This",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ec"
+      }
+    ]
+  },
+  {
+    "titolo": "Shallow",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f9"
+      }
+    ]
+  },
+  {
+    "titolo": "Thunder",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e8"
+      }
+    ]
+  },
+  {
+    "titolo": "XO Tour Llif3",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9fa"
+      }
+    ]
+  },
+  {
+    "titolo": "Take Me To Church",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9fb"
+      }
+    ]
+  },
+  {
+    "titolo": "Happier",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9fc"
+      }
+    ]
+  },
+  {
+    "titolo": "thank u, next",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f0"
+      }
+    ]
+  },
+  {
+    "titolo": "Counting Stars",
+    "anno": 2013,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9fd"
+      }
+    ]
+  },
+  {
+    "titolo": "Can't Hold Us - feat. Ray Dalton",
+    "anno": 2012,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9fe"
+      }
+    ]
+  },
+  {
+    "titolo": "Señorita",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ff"
+      }
+    ]
+  },
+  {
+    "titolo": "God's Plan",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa00"
+      }
+    ]
+  },
+  {
+    "titolo": "Don't Start Now",
+    "anno": 2020,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa01"
+      }
+    ]
+  },
+  {
+    "titolo": "Bohemian Rhapsody - Remastered 2011",
+    "anno": 1975,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa02"
+      }
+    ]
+  },
+  {
+    "titolo": "HUMBLE.",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa03"
+      }
+    ]
+  },
+  {
+    "titolo": "Let Me Love You",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa04"
+      }
+    ]
+  },
+  {
+    "titolo": "Congratulations",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "Stay With Me",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa05"
+      }
+    ]
+  },
+  {
+    "titolo": "Treat You Better",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ff"
+      }
+    ]
+  },
+  {
+    "titolo": "Uptown Funk (feat. Bruno Mars)",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa06"
+      }
+    ]
+  },
+  {
+    "titolo": "I Like Me Better",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa07"
+      }
+    ]
+  },
+  {
+    "titolo": "when the party's over",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e9"
+      }
+    ]
+  },
+  {
+    "titolo": "Mr. Brightside",
+    "anno": 2004,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa08"
+      }
+    ]
+  },
+  {
+    "titolo": "Dance Monkey",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa09"
+      }
+    ]
+  },
+  {
+    "titolo": "Havana (feat. Young Thug)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0a"
+      }
+    ]
+  },
+  {
+    "titolo": "Better Now",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "I Don't Care (with Justin Bieber)",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e7"
+      }
+    ]
+  },
+  {
+    "titolo": "Unforgettable",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0b"
+      }
+    ]
+  },
+  {
+    "titolo": "Too Good At Goodbyes",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa05"
+      }
+    ]
+  },
+  {
+    "titolo": "Riptide",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0c"
+      }
+    ]
+  },
+  {
+    "titolo": "That's What I Like",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0d"
+      }
+    ]
+  },
+  {
+    "titolo": "See You Again (feat. Charlie Puth)",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0e"
+      }
+    ]
+  },
+  {
+    "titolo": "One Kiss (with Dua Lipa)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa0f"
+      }
+    ]
+  },
+  {
+    "titolo": "Heathens",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f5"
+      }
+    ]
+  },
+  {
+    "titolo": "Demons",
+    "anno": 2012,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e8"
+      }
+    ]
+  },
+  {
+    "titolo": "Youngblood",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa10"
+      }
+    ]
+  },
+  {
+    "titolo": "Old Town Road - Remix",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa11"
+      }
+    ]
+  },
+  {
+    "titolo": "I'm Yours",
+    "anno": 2008,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa12"
+      }
+    ]
+  },
+  {
+    "titolo": "Attention",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa13"
+      }
+    ]
+  },
+  {
+    "titolo": "New Rules",
+    "anno": 2017,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa01"
+      }
+    ]
+  },
+  {
+    "titolo": "Sorry",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f8"
+      }
+    ]
+  },
+  {
+    "titolo": "Don't Let Me Down",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ec"
+      }
+    ]
+  },
+  {
+    "titolo": "7 Years",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa14"
+      }
+    ]
+  },
+  {
+    "titolo": "I Like It",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa15"
+      }
+    ]
+  },
+  {
+    "titolo": "I Fall Apart",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "We Don't Talk Anymore (feat. Selena Gomez)",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa13"
+      }
+    ]
+  },
+  {
+    "titolo": "Can't Feel My Face",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e3"
+      }
+    ]
+  },
+  {
+    "titolo": "Despacito",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa16"
+      }
+    ]
+  },
+  {
+    "titolo": "Psycho (feat. Ty Dolla $ign)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ea"
+      }
+    ]
+  },
+  {
+    "titolo": "Stitches",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9ff"
+      }
+    ]
+  },
+  {
+    "titolo": "What Do You Mean?",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9f8"
+      }
+    ]
+  },
+  {
+    "titolo": "Wonderwall - Remastered",
+    "anno": 1995,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa17"
+      }
+    ]
+  },
+  {
+    "titolo": "Radioactive",
+    "anno": 2012,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9e8"
+      }
+    ]
+  },
+  {
+    "titolo": "Eastside (with Halsey & Khalid)",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa18"
+      }
+    ]
+  },
+  {
+    "titolo": "Cheerleader - Felix Jaehn Remix Radio Edit",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa19"
+      }
+    ]
+  },
+  {
+    "titolo": "Cheap Thrills",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1a"
+      }
+    ]
+  },
+  {
+    "titolo": "Girls Like You (feat. Cardi B) - Cardi B Version",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9eb"
+      }
+    ]
+  },
+  {
+    "titolo": "Faded",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1b"
+      }
+    ]
+  },
+  {
+    "titolo": "Let Her Go",
+    "anno": 2013,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1c"
+      }
+    ]
+  },
+  {
+    "titolo": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1d"
+      }
+    ]
+  },
+  {
+    "titolo": "Lean On",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1e"
+      }
+    ]
+  },
+  {
+    "titolo": "Despacito - Remix",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa16"
+      }
+    ]
+  },
+  {
+    "titolo": "Lose Yourself",
+    "anno": 2014,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1f"
+      }
+    ]
+  },
+  {
+    "titolo": "Without Me (with Juice WRLD)",
+    "anno": 2019,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa20"
+      }
+    ]
+  },
+  {
+    "titolo": "One Dance",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa00"
+      }
+    ]
+  },
+  {
+    "titolo": "Sugar",
+    "anno": 2015,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56a9eb"
+      }
+    ]
+  },
+  {
+    "titolo": "Emotions",
+    "anno": 2021,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa21"
+      }
+    ]
+  },
+  {
+    "titolo": "Cold Water",
+    "anno": 2018,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa1e"
+      }
+    ]
+  },
+  {
+    "titolo": "I Took A Pill In Ibiza - Seeb Remix",
+    "anno": 2016,
+    "artisti_id": [
+      {
+        "$oid": "6842d937081ee8ac0d56aa22"
+      }
+    ]
+  }
+]
