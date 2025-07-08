@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestione Canzoni</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/artisti">Artisti</a></li>
+            <li><a href="/canzoni">Canzoni</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-card">
+        <h2>➕ Aggiungi Canzone</h2>
+        <form action="/add_canzone" method="post" id="form-canzone" class="form">
+            <input type="text" name="titolo" placeholder="Titolo canzone" required>
+            <input type="number" name="anno" placeholder="Anno" required>
+
+            <label>Seleziona artisti:</label>
+            <div class="artist-select-container">
+                <select id="selettore-artisti">
+                    <option value="">-- Scegli uno o più artisti --</option>
+                    {% for artista in artisti %}
+                        <option value="{{ artista._id }}">{{ artista.nome }}</option>
+                    {% endfor %}
+                </select>
+
+                <div id="artisti-selezionati"></div>
+            </div>
+
+            <input type="hidden" name="artisti_id" id="artisti-id-hidden">
+
+            <button type="submit">Aggiungi</button>
+        </form>
+    </div>
+
+<script>
+    const selettoreArtisti = document.getElementById("selettore-artisti");
+    const artistiSelezionati = document.getElementById("artisti-selezionati");
+    const artistiIdHidden = document.getElementById("artisti-id-hidden");
+
+    let artistiSelezionatiArray = [];
+
+    selettoreArtisti.addEventListener("change", () => {
+        const selectedOption = selettoreArtisti.options[selettoreArtisti.selectedIndex];
+        const artistId = selectedOption.value;
+        const artistName = selectedOption.text;
+
+        if (artistId && !artistiSelezionatiArray.find(a => a.id === artistId)) {
+            artistiSelezionatiArray.push({ id: artistId, nome: artistName });
+            aggiornaArtistiSelezionati();
+        }
+
+        selettoreArtisti.selectedIndex = 0;
+    });
+
+    function aggiornaArtistiSelezionati() {
+        artistiSelezionati.innerHTML = "";
+
+        artistiSelezionatiArray.forEach(artista => {
+            const tag = document.createElement("span");
+            tag.className = "artista-tag";
+            tag.textContent = artista.nome;
+
+            const removeBtn = document.createElement("button");
+            removeBtn.type = "button";
+            removeBtn.textContent = "❌";
+            removeBtn.addEventListener("click", () => {
+                artistiSelezionatiArray = artistiSelezionatiArray.filter(a => a.id !== artista.id);
+                aggiornaArtistiSelezionati();
+            });
+
+            tag.appendChild(removeBtn);
+            artistiSelezionati.appendChild(tag);
+        });
+
+        artistiIdHidden.value = artistiSelezionatiArray.map(a => a.id).join(",");
+    }
+
+    document.getElementById("form-canzone").addEventListener("submit", (e) => {
+        const hiddenField = document.createElement("input");
+        hiddenField.type = "hidden";
+        hiddenField.name = "artisti_id";
+        hiddenField.value = artistiSelezionatiArray.map(a => a.id).join(",");
+
+        e.target.appendChild(hiddenField);
+    });
+
+    document.getElementById("form-canzone").addEventListener("submit", function(e) {
+        const artistiInput = document.getElementById("artisti-id-hidden");
+        if (!artistiInput.value.trim()) {
+            e.preventDefault();
+            alert("Devi selezionare almeno un artista per aggiungere la canzone!");
+        }
+    });
+</script>
+
+<style>
+    .artista-tag {
+        display: inline-flex;
+        align-items: center;
+        background-color: #444;
+        color: #f0f0f0;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .artista-tag button {
+        margin-left: 8px;
+        background: none;
+        border: none;
+        color: #f0f0f0;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .artista-tag button:hover {
+        color: #ff6b6b;
+    }
+
+    #artisti-selezionati {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .artist-select-container {
+        margin-top: 10px;
+    }
+
+    select#selettore-artisti {
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+</style>
+
+        <div class="form-card">
+            <h2>🔎 Cerca canzone</h2>
+            <input type="text" id="ricerca-canzone" placeholder="Cerca per titolo o artista...">
+        </div>
+
+        <div class="lista-container">
+            <h2>Lista canzoni (<span id="count-canzoni">0</span>)</h2>
+            <ul id="lista-canzoni" class="lista-elementi">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("ricerca-canzone");
+        const lista = document.getElementById("lista-canzoni");
+
+        async function fetchCanzoni() {
+            const query = input.value.trim();
+            const url = query === "" ? `/api/canzoni` : `/api/canzoni?query=${encodeURIComponent(query)}`;
+
+            try {
+                const [resCanzoni, resCounts] = await Promise.all([
+                    fetch(url),
+                    fetch(`/api/counts`)
+                ]);
+
+                const dati = await resCanzoni.json();
+                const counts = await resCounts.json();
+
+                lista.innerHTML = "";
+
+                document.getElementById("count-canzoni").textContent = counts.canzoni;
+
+                if (dati.length === 0) {
+                    lista.innerHTML = "<li>Nessuna canzone trovata.</li>";
+                    return;
+                }
+
+                dati.forEach(c => {
+                    const li = document.createElement("li");
+                    li.className = "item";
+
+                    const info = document.createElement("div");
+                    info.innerHTML = `<strong>${c.titolo}</strong> (${c.anno})<br><span>Artisti: ${c.artisti.map(a => a.nome).join(", ")}</span>`;
+
+                    const actions = document.createElement("div");
+                    actions.className = "action-buttons";
+
+                    const editBtn = document.createElement("button");
+                    editBtn.textContent = "Modifica";
+                    editBtn.className = "edit-button";
+
+                    const deleteBtn = document.createElement("a");
+                    deleteBtn.href = `/delete_canzone/${c._id}`;
+                    deleteBtn.className = "delete-button";
+                    deleteBtn.textContent = "Elimina";
+
+                    actions.appendChild(editBtn);
+                    actions.appendChild(deleteBtn);
+
+                    li.appendChild(info);
+                    li.appendChild(actions);
+                    lista.appendChild(li);
+
+                    editBtn.addEventListener("click", () => {
+                        const titoloInput = document.createElement("input");
+                        titoloInput.value = c.titolo;
+
+                        const annoInput = document.createElement("input");
+                        annoInput.type = "number";
+                        annoInput.value = c.anno;
+
+                        const saveBtn = document.createElement("button");
+                        saveBtn.textContent = "Conferma";
+                        saveBtn.className = "save-button";
+
+                        const cancelBtn = document.createElement("button");
+                        cancelBtn.textContent = "Annulla";
+                        cancelBtn.className = "cancel-button";
+
+                        cancelBtn.addEventListener("click", fetchCanzoni);
+
+                        info.innerHTML = "";
+                        info.appendChild(titoloInput);
+                        info.appendChild(annoInput);
+
+                        actions.innerHTML = "";
+                        actions.appendChild(saveBtn);
+                        actions.appendChild(cancelBtn);
+
+                        saveBtn.addEventListener("click", async () => {
+                            const updated = {
+                                titolo: titoloInput.value,
+                                anno: annoInput.value
+                            };
+
+                            const res = await fetch(`/api/canzoni/${c._id}`, {
+                                method: "PUT",
+                                headers: {"Content-Type": "application/json"},
+                                body: JSON.stringify(updated)
+                            });
+
+                            if (res.ok) {
+                                fetchCanzoni();
+                            } else {
+                                alert("Errore nel salvataggio");
+                            }
+                        });
+                    });
+                });
+            } catch (error) {
+                console.error("Errore:", error);
+                lista.innerHTML = "<li>Errore nella ricerca.</li>";
+            }
+        }
+
+        input.addEventListener("input", fetchCanzoni);
+        window.addEventListener("DOMContentLoaded", fetchCanzoni);
+    </script>
+</body>
+</html>

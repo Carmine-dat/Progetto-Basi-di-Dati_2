@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/artisti">Artisti</a></li>
+            <li><a href="/canzoni">Canzoni</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-container">
+        <h1>Benvenuto nella tua libreria musicale 🎵</h1>
+
+        <form id="search-form" action="#" onsubmit="return false;" class="search-form">
+            <input type="text" id="search-input" name="query" placeholder="Cerca una canzone o un artista..." class="search-bar" autocomplete="off" />
+        </form>
+
+        <div id="search-results" class="search-results"></div>
+        <div class="lista-container">
+            <ul id="lista-canzoni" class="lista-elementi">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById('search-input');
+        const result = document.getElementById('search-results');
+
+        input.addEventListener('input', async () => {
+            result.innerHTML = ""; 
+            const query = input.value.trim();
+
+            if (!query) {
+                result.innerHTML = "";
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/canzoni?query=${encodeURIComponent(query)}`);
+                if (!res.ok) throw new Error("Errore nella ricerca");
+                const canzoni = await res.json();
+
+                if (canzoni.length === 0) {
+                    result.innerHTML = "<p class='no-results'>Nessuna canzone trovata</p>";
+                    return;
+                }
+
+                let html = "<ul class='canzoni-lista'>";
+                canzoni.forEach(c => {
+                    let artisti = c.artisti.map(a => a.nome).join(", ");
+                    html += `<li><strong>${c.titolo}</strong> (${c.anno})<br>Artisti: ${artisti}</li>`;
+                });
+                html += "</ul>";
+
+                result.innerHTML = html;
+
+            } catch (err) {
+                result.innerHTML = `<p class="error">Errore: ${err.message}</p>`;
+            }
+        });
+
+    </script>
+
+    <style>
+        .canzoni-lista {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        .canzoni-lista li {
+            background-color: #222;
+            color: #eee;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            font-size: 16px;
+        }
+    </style>
+</body>
+</html>

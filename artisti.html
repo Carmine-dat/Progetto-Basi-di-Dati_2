@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestione Artisti</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/artisti">Artisti</a></li>
+            <li><a href="/canzoni">Canzoni</a></li>
+        </ul>
+    </nav>
+
+    <div class="container center">
+        <div class="form-card">
+            <h2>➕ Aggiungi Artista</h2>
+            <form action="/add_artista" method="post" id="form-artista" class="form">
+                <input type="text" name="nome" placeholder="Nome artista" required>
+                <input type="text" name="genere" placeholder="Genere musicale" required>
+                <button type="submit">Aggiungi</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>🔍 Cerca Artista</h2>
+            <input type="text" id="ricerca-artista" placeholder="Digita un nome...">
+        </div>
+
+        <div class="lista-container">
+            <h2>Lista artisti (<span id="count-artisti">0</span>)</h2>
+            <ul id="lista-artisti" class="lista-elementi">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("ricerca-artista");
+        const lista = document.getElementById("lista-artisti");
+
+        input.addEventListener("input", fetchArtisti);
+
+        async function fetchArtisti() {
+            const query = input.value.trim();
+            const url = query === "" ? `/api/artisti` : `/api/artisti?query=${encodeURIComponent(query)}`;
+
+            try {
+                const [resArtisti, resCounts] = await Promise.all([
+                    fetch(url),
+                    fetch(`/api/counts`)
+                ]);
+
+                const dati = await resArtisti.json();
+                const counts = await resCounts.json();
+
+                dati.sort((a, b) => a.nome.localeCompare(b.nome));
+
+
+                document.getElementById("count-artisti").textContent = counts.artisti;
+
+                lista.innerHTML = "";
+
+                if (dati.length === 0) {
+                    lista.innerHTML = "<li>Nessun artista trovato.</li>";
+                    return;
+                }
+
+                dati.forEach(a => {
+                    const li = document.createElement("li");
+                    li.className = "item";
+
+                    const info = document.createElement("div");
+                    info.innerHTML = `<strong>${a.nome}</strong> - ${a.genere}`;
+
+                    const actions = document.createElement("div");
+                    actions.className = "action-buttons";
+
+                    const editBtn = document.createElement("button");
+                    editBtn.textContent = "Modifica";
+                    editBtn.className = "edit-button";
+
+                    const deleteBtn = document.createElement("a");
+                    deleteBtn.href = `/delete_artista/${a._id}`;
+                    deleteBtn.className = "delete-button";
+                    deleteBtn.textContent = "Elimina";
+
+                    actions.appendChild(editBtn);
+                    actions.appendChild(deleteBtn);
+
+                    li.appendChild(info);
+                    li.appendChild(actions);
+                    lista.appendChild(li);
+
+                    editBtn.addEventListener("click", () => {
+                        const nomeInput = document.createElement("input");
+                        nomeInput.value = a.nome;
+
+                        const genereInput = document.createElement("input");
+                        genereInput.value = a.genere;
+
+                        const saveBtn = document.createElement("button");
+                        saveBtn.textContent = "Conferma";
+                        saveBtn.className = "save-button";
+
+                        const cancelBtn = document.createElement("button");
+                        cancelBtn.textContent = "Annulla";
+                        cancelBtn.className = "cancel-button";
+
+                        cancelBtn.addEventListener("click", fetchArtisti);
+
+                        info.innerHTML = "";
+                        info.appendChild(nomeInput);
+                        info.appendChild(genereInput);
+
+                        actions.innerHTML = "";
+                        actions.appendChild(saveBtn);
+                        actions.appendChild(cancelBtn);
+
+                        saveBtn.addEventListener("click", async () => {
+                            const updated = {
+                                nome: nomeInput.value,
+                                genere: genereInput.value
+                            };
+
+                            const res = await fetch(`/api/artisti/${a._id}`, {
+                                method: "PUT",
+                                headers: {"Content-Type": "application/json"},
+                                body: JSON.stringify(updated)
+                            });
+
+                            if (res.ok) {
+                                fetchArtisti();
+                            } else {
+                                alert("Errore nel salvataggio");
+                            }
+                        });
+                    });
+                });
+            } catch (error) {
+                lista.innerHTML = "<li>Errore nella ricerca</li>";
+                console.error("Errore:", error);
+            }
+        }
+
+        fetchArtisti();
+
+    </script>
+</body>
+</html>
