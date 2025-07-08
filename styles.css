@@ -1,0 +1,288 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e2f;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #3f3f5f;
+}
+
+
+/* CONTAINER CENTRALE */
+.container,
+.home-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    margin-top: 80px;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000066;
+}
+
+.center {
+    text-align: center;
+}
+
+/* FORM */
+form,
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+.search-bar {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #1DB954;
+    color: #121212;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #17a64d;
+}
+
+/* CARD */
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra orizzontalmente tutti gli elementi */
+    gap: 10px; /* spazio tra gli elementi */
+}
+
+.form-card button[type="submit"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 120px;
+}
+
+/* LISTE */
+.lista-elementi {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    background-color: #2e2e2e;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BADGE */
+.badge {
+    background-color: #1DB954;
+    color: #121212;
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* DELETE BUTTON */
+.delete-button {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* SEARCH RESULTS */
+.search-results {
+    margin-top: 2rem;
+}
+
+/* NESSUN RISULTATO */
+.no-results {
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+.artisti-selezionati {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.artista-tag {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.artista-tag button {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336; /* Rosso */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+.save-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    background-color: #f44336; /* Rosso */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+.form-card h2,
+.lista-container h2 {
+    text-align: center;
+}
+
+.form-card input[type="text"]#ricerca-canzone {
+    width: 300px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav.navbar {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container,
+    .home-container {
+        padding: 1rem;
+        margin: 1rem;
+        margin-top:12rem;
+    }
+
+    .form-card,
+    form {
+        padding: 1rem;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
